@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <body>
+    <head>
+      <link rel = "stylesheet" href="styles.css">
+      <meta charset = "UTF-8">
+      <title></title>
+    </head>
+    <h1 id = "title">SHIMEJI SIMULATION SURVEY FORM</h1>
+<p id="description">I would love to know what you all think of Shimeji Simulation</p>
+<form method ="post" id = "survey-form">
+  <fieldset> 
+    <label id = "name-label" for ="name">Enter your name: <input required id="name" type= "text" placeholder="Just enter your name..."/></label>
+    <label id = "email-label" for = "email">Enter your email: <input required id="email" type = "email" placeholder="example@gmail.com"/></label>
+    <label id="number-label" for ="number">Enter your age: <input id = "number" type = "number" min = "14" max = "25" placeholder="enter an age between 14 and 25"/></label>
+  </fieldset>
+  <p id="character">Favorite Character
+  <select id = "dropdown">
+    <option value = "">(select your favorite character)</option>
+    <option value = "1">Majime Yamashita</option>
+    <option value = "2">Shijima Tsukushima</option>
+    <option value="3">Big sis</option>
+    <option value="4">Ms.Mogawa</option>
+    <option value="5">The Gardener</option>
+    <option value="6">Sumida</option>
+    </select>
+  <fieldset>
+    <label name ="based-tkmiz-enjoyer"><input name = "author-opinion" id = "author-opinion" value ="based" type ="radio" class="inline"/>Based Tkmiz Enjoyer</label>
+    <label name = "cringe-tkmiz-hater"><input name="author-opinion" id="author-opinion" value="cringe" type="radio" class="inline"/>Cringe tkmiz Hater</label>
+    </fieldset>
+  <fieldset>
+    <p>Best Volume?</p>
+    <label name ="volume"><input name="volume" id="volume" value="volume-1" type = "checkbox"/> Volume 1</label>
+      <label name ="volume"><input name="volume" id="volume" value="volume-1" type = "checkbox"/> Volume 2</label>
+        <label name ="volume"><input name="volume" id="volume" value="volume-2" type = "checkbox"/> Volume 3</label>
+    </fieldset>
+    <fieldset id = "manga-opinion">
+      <p>What are your feelings on the manga?</p>
+      <label name = "opinion-one"><input name="opinion" id="opinion" type="radio" value="like" class="inline"/>Liked it</label>
+      <label name ="opinion-two"><input name="opinion" id="opinion" type="radio" value="loved" class="inline"/>Loved it</label>
+      <label name="opinion-three"><input name="opinion" id = "opinion-three"  value = "hated" type ="radio" class="inline"/>Hated it</label>
+      </fieldset>
+<hr>
+      <label for="comments">
+        <textarea id ="comments" name = "comments" rows ="5" cols="30" placeholder="If you have any additional comments please write them here..."></textarea>
+        </label>
+        <input id="submit" type = "submit" value="Submit"/>
+
+  </form>
+
+  </body>
+  
+</html>
